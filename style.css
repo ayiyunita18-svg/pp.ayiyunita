@@ -1,0 +1,143 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f6ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #e7d2ff;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #a500ff;
+}
+
+/* ABOUT */
+.about {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    align-items: center;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    object-fit: cover;
+}
+
+/* SECTIONS */
+section {
+    padding: 40px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #5a0099;
+}
+
+/* SKILLS */
+.skills ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+.education table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.education caption {
+    caption-side: top;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 10px;
+    color: #5a0099; /* bisa diganti */
+}
+
+.education th,
+.education td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.education thead {
+    background: #e7d2ff;
+    font-weight: bold;
+}
+
+.education tfoot td {
+    background: #f5eaff;
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+}
+
+
+/* PROJECTS */
+.projects {
+    background: #f2e9ff;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project-img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56; /* rasio 16:9 */
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+/* CONTACT */
+.contact p {
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #e7d2ff;
+    margin-top: 30px;
+}

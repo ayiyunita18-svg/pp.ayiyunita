@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pribadi</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Portofolio Pribadi</h1>
+        <p class="subtitle">Halo! Saya <span class="highlight">Ayi yunita nuraisyah</span></p>
+        <a href="lat.css.html"> Latihsan css </a>
+    </header>
+
+    <!-- Tentang Saya -->
+    <section class="about">
+        <img src="images/personal.jpeg" alt="Foto Profil" class="profile-img">
+        <div>
+            <h2>Tentang Saya</h2>
+            <p>
+                Saya adalah seseorang wanita berusia 18 tahun yang berlatar pendidikan Teknik komputer dan jaringan
+                adapun kemampuan yang saya miliki, yaitu menginstal windows, membuat hotspot mikrotik, membuat kabel(cross over,straight), merakit pc, dan mampu berkerja sama tim maupun individu.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills">
+        <h2>Keterampilan</h2>
+        <ul>
+            <li>menginstal windows</li>
+            <li>membuat hotspot mikrotik</li>
+            <li>membuat kabel(crossover, straight) </li>
+            <li>merakit pc</li>
+        </ul>
+    </section>
+
+    <!-- RIWAYAT PENDIDIKAN / PENGALAMAN -->
+<section class="education">
+    <h2>Riwayat Pendidikan / Pengalaman</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Tahun</th>
+                <th>Instansi</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>2019 - 2022</td>
+                <td>Mts mathlabussaadah</td>
+            </tr>
+
+            <tr>
+                <td>2022 - 2025</td>
+                <td>SMK ISLAM TENJONAGARA , Jurusan Tkj</td>
+            </tr>
+
+            <tr>
+                <td>2024</td>
+                <!-- Contoh penggunaan COLSPAN -->
+                <td colspan="2">Mengikuti Peraktik kerja lapangan selama 2 bulan</td>
+            </tr>
+            <tr>
+                <td>2025</td>
+                <!-- Contoh penggunaan COLSPAN -->
+                <td colspan="2">Berkeja sebagai kasir selama 1 bulan</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Data terakhir diperbarui pada 2025</td>
+            </tr>
+        </tfoot>
+    </table>
+</section>
+
+
+    <!-- Projects -->
+    <section class="projects">
+        <h2>Proyek Saya</h2>
+
+       <div class="project-card">
+        <h3>Poster Digital Event</h3>
+        <img src="images/karya1.jpeg" alt="Poster Event" class="project-img">
+    </div>
+
+        <div class="project-card">
+            <h3>Karya Lain</h3>
+            <img src="images/karya2.jpeg" alt="Desain Lain" class="project-img">
+
+        </div>
+         <div class="project-card">
+        <h3>Video Presentasi Project</h3>
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/AMBhxwZQFjk?si=5dnWhqxIiWPSWB2z" 
+                title="YouTube video"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <p>Video presentasi project yang diunggah di YouTube.</p>
+    </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+        <h2>Kontak</h2>
+        <p>Email: Ayiyunita18@gmail.com</p>
+        <p>Instagram: @Ayi yunita</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Portofolio Pribadi</p>
+    </footer>
+<!-- FORM KONTAK -->
+<section class="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">Form Kontak</h2>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Informasi Kontak</legend>
+
+            <!-- Nama -->
+            <label for="nama" aria-label="Input Nama Lengkap">
+                Nama Lengkap <abbr title="Required">*</abbr>
+            </label>
+            <input 
+                type="text" 
+                id="nama" 
+                name="nama" 
+                required 
+                minlength="3" 
+                maxlength="50"
+                aria-describedby="namaHelp"
+                placeholder="Masukkan nama..."
+            >
+            <small id="namaHelp">Isi dengan nama lengkap Anda.</small>
+
+            <!-- Email -->
+            <label for="email">Email <abbr title="Required">*</abbr></label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required 
+                aria-describedby="emailHelp"
+                placeholder="email@example.com"
+            >
+            <small id="emailHelp">Kami tidak akan membagikan email Anda.</small>
+
+            <!-- Nomor Telepon -->
+            <label for="nomor">Nomor Telepon</label>
+            <input 
+                type="tel" 
+                id="nomor" 
+                name="nomor" 
+                minlength="10" 
+                maxlength="15"
+                placeholder="08xxxxxxxxxx"
+            >
+
+            <!-- Jenis kontak -->
+            <p>Jenis Kontak:</p>
+            <label>
+                <input type="radio" name="jenis" value="saran" required>
+                Saran
+            </label>
+            <label>
+                <input type="radio" name="jenis" value="pertanyaan">
+                Pertanyaan
+            </label>
+
+            <!-- Pesan -->
+            <label for="pesan">Pesan</label>
+            <textarea 
+                id="pesan" 
+                name="pesan" 
+                rows="5" 
+                required 
+                minlength="10" 
+                maxlength="300"
+                aria-describedby="pesanHelp"
+                placeholder="Tuliskan pesan..."
+            ></textarea>
+            <small id="pesanHelp">Minimal 10 karakter.</small>
+
+            <!-- Persetujuan -->
+            <label class="check">
+                <input type="checkbox" name="setuju" required>
+                Saya setuju memberikan informasi ini.
+            </label>
+
+            <button type="submit">Kirim</button>
+        </fieldset>
+<head>
+    <!-- SEO Elements -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Portofolio pribadi [Nama Anda], menampilkan informasi diri, keterampilan, pengalaman, dan proyek.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Portofolio: [Nama Anda]">
+    <meta property="og:description" content="Lihat profil, pengalaman, dan karya terbaik saya di portofolio ini.">
+    <meta property="og:image" content="lokasi-foto.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://contoh-website.com">
+    <meta property=""
+
+    <title>Portofolio [Nama Anda]</title>
+</head>
+
+    </form>
+</body>
+</html>
